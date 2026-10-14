@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/ProjectNetflix/style/style.css">
+    <link rel="icon" href="/ProjectNetflix/images/LogoHellflix.png"> 
+    <title>Document</title>
+</head>
+<body>
+    <!--navbar small-->
+
+    <div class="d-xxl-none d-xl-none d-lg-none d-md-none d-sm-block">
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-dark p-4">
+                <div class="d-grid gap-2">
+                    <h5>menu</h5>
+                    <button class="btn btn-success bi bi-house" type="button"> Home</button>
+                    <button class="btn btn-primary fa fa-tv" type="button"> Series</button>
+                    <button class="btn btn-primary fa fa-film" type="button"> Top Movies</button>
+                    <button class="btn btn-primary bi bi-tv-fill" type="button"> Top Series</button>
+                    <button class="btn btn-primary bi bi-people-fill" type="button"> Actors</button>
+                    <button class="btn btn-primary bi bi-headphones" type="button"> Customer-service</button>
+                    <button class="btn btn-danger bi bi-person" type="button"> Profile</button>
+                  </div>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark ">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+    </div>
+<!--Header items-->
+    <div class="d-flex justify-content-center header-background logo-xsm d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none ">
+      <a  href="#">
+        <img class="img-logo  mt-1" src="images/LogoHellflix.png" alt=logo"">
+      </a>
+    </div>
+
+<!--header adjustments for bigger displays-->
+<div class="turnoffnav">
+  <div class="header-background pt-2 container">
+    <div class="d-flex">
+      <div class="col-12 col-md-3 text-center text-md-left me-lg-5">
+        <a class="navbar-brand" href="#">
+          <img class="img-logo float-md-start" src="images/LogoHellflix.png" alt="logo">
+        </a>
+      </div>
+      <nav class="text-white mx-md-5 d-flex justify-content-center m-auto col-12 col-md-6 mx-0">
+        <div class="dropdown mx-2 backgroundbuttonheader">
+          <button class="btn text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-film display-4 text-danger"></i> Movies
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">All Movies</a></li>
+            <li><a class="dropdown-item" href="#">Top Movies</a></li>
+          </ul>
+        </div>
+        <div class="dropdown mx-2 backgroundbuttonheader">
+          <button class="btn text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-tv display-4 text-danger"></i> Series
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">All Series</a></li>
+            <li><a class="dropdown-item" href="#">Top Series</a></li>
+          </ul>
+        </div>
+        <div class="dropdown mx-2 backgroundbuttonheader">
+          <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-people text-danger"></i> Actors
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Female Actors</a></li>
+            <li><a class="dropdown-item" href="#">Male Actors</a></li>
+          </ul>
+        </div>
+        <div class="dropdown mx-2 backgroundbuttonheader">
+          <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-phone display-4 text-danger"></i> Contact
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Customer Service</a></li>
+            <li><a class="dropdown-item" href="#">Address</a></li>
+            <li><a class="dropdown-item" href="#">Movie Request</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+            <!--header and dark-mode -->
+            <div class="d-flex justify-content-evenly align-items-center">
+                <div>
+                  <div class="dropdown">
+                    <img class="btn img-avatar dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" src="images/Avatar.svg" alt="Avatar">
+                    <form class="dropdown-menu profile" id="signInForm">
+                      <div class="mb-3">
+                        <label for="EmailDropDown" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="EmailDropDown" placeholder="email@example.com" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="EmailPass" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="EmailPass" placeholder="Password" required>
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                        <label class="form-check-label" for="dropdownCheck2">Remember me</label>
+                      </div>
+                      <div id="errorMessage" class="error"></div>
+                      <button type="button" id="signInBtn" class="btn btn-primary">Sign in</button>
+                    </form>
+                  </div>
+                </div>
+      
+                      <div class="dropdown">
+                          <button class="btn btn-block dropdown-toggle bg-warning me-2" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="bi bi-bell "></i>
+                          </button>
+                          <form class="dropdown-menu p-3">
+                              <h5>Your Notifications</h5>
+                              <hr>
+                              <p>Lorem, ipsum dolor.</p>
+                              <hr>
+                              <p>Lorem ipsum dolor sit.</p>
+                          </form>
+                      </div>
+                       <!--Script dark-mode lightbulb-->
+                      <div>
+                              <button class="fa fa-lightbulb-o  lightbulb "onclick="myFunction()"></button>
+    
+      
+                  </div>
+                </div>
+              </div>
+              </div>
+            
+              <div class="d-flex searchbar-xsm  d-lg-none d-xl-none d-xxl-none">
+                <button type="button" class="btn btn-outline-light me-1 bi bi-search searchbutton justify-content-center header-background logo-xsm border border-danger-subtle "></button>
+                <input class="form-control bg-dark-subtle " list="datalistOptions" placeholder="Type to search...">
+              </div >
+            </div>
+          </header>
+          <div class=" col-lg-12  container-xl container-xxl container-fluid bg-dark d-flex py-4  ">
+            <!--sidebar-->   
+            
+                           <div class=" pe-3 d-lg-block border-end border-dark-subtle  d-sm-none  d-xxl-block sidebar ">
+                            <div class="d-flex searchbar">
+                              <button type="button" class="btn btn-outline-light me-1 bi bi-search"></button>
+                              <input class="form-control bg-dark-subtle " list="datalistOptions" placeholder="Type to search...">
+                            </div >
+                             <div class="py-3">
+                                <button class="btn btn-info me-5 bi bi-telegram"> Telegram</button>
+                                <button class="btn btn-danger bi bi-instagram"> Instagram</button>
+                            </div>
+                            <div>
+                                <hr class="text-white">
+                                <h5 class="text-white">Last Series</h5>
+            
+                                <!--Squidgames-->
+            
+                                <div>
+                                    <div class="card rounden-4 cardhover">
+                                       <a href="#"> <img src="images/Squid-Game.jpg" class="card-img-top" alt="squidgame">
+                                       </a>
+                                        <div class="card-body bg-success-subtle rounded-3">
+                                         <a href="#"><p class="card-text text-dark d-flex justify-content-between"><strong class="text-bg-warning rounded-1">Squid Game</strong> Season2 LastEpisode</p>
+                                         </a> 
+                                        </div>
+                                      </div>
+                                      <!--Naruto-->
+
+                    <div>
+                        <div class="card rounded-3 cardhover">
+                           <a href="#"> <img src="images/Narutoside.jpg" class="card-img-top" alt="naruto">
+                           </a>
+                            <div class="card-body bg-success-subtle rounded-3">
+                             <a href="#"> <p class="card-text text-dark d-flex justify-content-between"><strong class="text-bg-warning rounded-1 ">Naruto</strong> Season1 LastEpisode</p>
+                             </a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <!--DragonBall-->
+
+                    <div>
+                        <div class="card rounded-3 cardhover">
+                           <a href="#"> <img src="images/dragonball.jpg" class="card-img-top" alt="dragonball">
+                           </a>
+                            <div class="card-body bg-success-subtle rounded-3">
+                             <a href="#"> <p class="card-text text-dark d-flex justify-content-between"><strong class="text-bg-warning rounded-1 ">DragonBall</strong> Season1 Episode17</p>
+                             </a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <!--HarleyQuinn-->
+
+                    <div class="card rounded-3 cardhover">
+                      <a href="#"> <img src="images/Harley Quinn.jpg" class="card-img-top" alt="HarleyQuinn">
+                      </a>
+                       <div class="card-body bg-success-subtle rounded-3">
+                        <a href="#"> <p class="card-text text-dark d-flex justify-content-between"><strong class="text-bg-warning rounded-1 ">HarleyQuinn</strong> Season5 Episode05</p>
+                        </a>
+                       </div>
+                     </div>
+               </div>
+
+               <!--BeastGames-->
+
+               <div class="card rounded-3 cardhover">
+                <a href="#"> <img src="images/BeastGames.jpg" class="card-img-top" alt="BeastGames">
+                </a>
+                 <div class="card-body bg-success-subtle rounded-3">
+                  <a href="#"> <p class="card-text text-dark d-flex justify-content-between"><strong class="text-bg-warning rounded-1 ">BeastGames</strong> Season1 LastEpisode</p>
+                  </a>
+                 </div>
+               </div>
+        
+
+                     <!--Series Archive button-->
+
+                    <div>
+                        <button class="btn btn-success my-3 w-100">Series Archives</button>
+                    </div>
+               
+                <hr class="text-white">
+                <div>
+                    <h5 class="text-white">Last Trailers</h5>
+
+                    <!--Trailer sidebar-->
+
+                    <div class="card rounded-5 cardhover">
+                        <a href="#"> <img src="images/jokerside.jpg" class="card-img-top" alt="joker">
+                        </a>
+                         <div class="card-body bg-success-subtle rounded-3">
+                          <a href="#"> <p class="card-text text-dark d-flex justify-content-between"><strong class="text-bg-warning rounded-1  ">Beetlejuice</strong> (2024) Official Trailer</p>
+                          </a>
+                         </div>
+                       </div>
+                </div>
+                </div>
+                                </div>
+                       
+    <div>
+        <h1 class="p-3">watchlist</h1>
+       
+    </div>
+    <div id="watchlistContainer" class="d-flex flex-wrap gap-3 p-3"></div>
+    <div>
+        <button onclick="goHome()" class="btn btn-primary">
+            <i class="bi bi-house-door"></i> Home
+          </button>
+    </div>
+
+<!--I made a function for reseting watchlist-->
+
+    <div>
+        <button onclick="resetWatchlist()" class="btn btn-danger">
+            Reset Watchlist
+          </button>
+    </div>
+ 
+    <script src="/ProjectNetflix/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="watchlist.js"></script>
+  </body>
+</html>
